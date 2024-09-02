@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { logo } from '../assets/image'
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 
@@ -8,12 +9,13 @@ function Bottom() {
       <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 place-items-center w-full h-auto bg-[#e8e7e7] py-10'>
         <div className='text-center md:text-left'>
           <h3 className='text-lg md:text-2xl font-extrabold text-[#6c6a6a]'>COMPANY</h3>
-          <ul className='text-[#646262] text-sm md:text-xl font-semibold py-4'>
-            <li className='py-1 md:py-2 lg:py-4'>Home</li>
-            <li className='py-1 md:py-2 lg:py-4'>About</li>
-            <li className='py-1 md:py-2 lg:py-4'>Career</li>
-            <li className='py-1 md:py-2 lg:py-4'>Contact</li>
-          </ul>
+          <div className='text-[#646262] text-sm md:text-xl font-semibold py-4
+          flex flex-col flex-wrap'>
+            <Link to='/' className='py-1 md:py-2 lg:py-4'>Home</Link>
+            <Link to='/about' className='py-1 md:py-2 lg:py-4'>About</Link>
+            <Link to='/career' className='py-1 md:py-2 lg:py-4'>Career</Link>
+            <Link to='/contact' className='py-1 md:py-2 lg:py-4'>Contact</Link>
+          </div>
         </div>
         <div className='text-center md:text-left'>
           <h3 className='text-lg md:text-2xl font-extrabold text-[#6c6a6a]'>OPEN HOUR</h3>
@@ -41,11 +43,16 @@ function Bottom() {
             warehousing and logistics services
           </p>
           <div className='flex justify-center md:justify-start gap-x-4 md:gap-x-5 py-10 flex-wrap'>
-            <a className='bg-red-500 rounded-full p-2 md:p-3 text-white' href=''><FaFacebookF className='text-xl md:text-2xl'/></a>
-            <a className='bg-red-500 rounded-full p-2 md:p-3 text-white' href=''><FaInstagram className='text-xl md:text-2xl'/></a>
-            <a className='bg-red-500 rounded-full p-2 md:p-3 text-white' href=''><FaTwitter className='text-xl md:text-2xl'/></a>
-            <a className='bg-red-500 rounded-full p-2 md:p-3 text-white' href=''><FaYoutube className='text-xl md:text-2xl'/></a>
-            <a className='bg-red-500 rounded-full p-2 md:p-3 text-white' href=''><FaLinkedin className='text-xl md:text-2xl'/></a>
+            <a className='bg-red-500 rounded-full p-2 md:p-3
+             text-white' href=''><FaFacebookF className='text-xl md:text-2xl'/></a>
+            <a className='bg-red-500 rounded-full p-2 md:p-3
+             text-white' href=''><FaInstagram className='text-xl md:text-2xl'/></a>
+            <a className='bg-red-500 rounded-full p-2 md:p-3
+             text-white' href=''><FaTwitter className='text-xl md:text-2xl'/></a>
+            <a className='bg-red-500 rounded-full p-2 md:p-3
+             text-white' href=''><FaYoutube className='text-xl md:text-2xl'/></a>
+            <a className='bg-red-500 rounded-full p-2 md:p-3
+             text-white' href=''><FaLinkedin className='text-xl md:text-2xl'/></a>
           </div>
         </div>
       </div>

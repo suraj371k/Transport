@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { background } from '../../assets/image'
 import ContactForm from './Contact-from'
 
 function Contact() {
+  useEffect(() => {
+    window.scroll(0 , 0)
+  } , [])
   return (
 
     <div>

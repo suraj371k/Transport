@@ -1,5 +1,6 @@
 import React from 'react'
 import {Header , Story , Services , Stats , Quote} from '../index'
+import { Route , Routes , BrowserRouter} from 'react-router-dom'
 
 function Home() {
   return (

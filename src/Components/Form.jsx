@@ -38,7 +38,6 @@ function Form() {
             type="email"
             name="email"
             placeholder='EMAIL'
-            required
             className='w-full py-3 px-4 bg-blue-100 outline-none border-2 border-blue-200 rounded'
           />
           <ValidationError

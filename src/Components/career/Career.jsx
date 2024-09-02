@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {  background } from '../../assets/image'
 import { CareerInfo ,Join,Perks} from '../../index'
 
 function Career() {
+  useEffect(() => {
+    window.scroll(0 , 0)
+  } , [])
   return (
     <div>
     <div className='relative  h-[80vh] bg-cover overflow-hidden'    

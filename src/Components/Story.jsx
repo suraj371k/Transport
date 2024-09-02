@@ -61,7 +61,8 @@ function Story() {
         <img className='w-full max-w-2xl mt-10' src={high} alt="High Image" />
       </div>
 
-      <div className='absolute top-[70%] w-full max-w-4xl mx-auto bg-white shadow-lg backdrop-blur-md p-6'>
+      <div className='absolute top-[70%] w-full max-w-4xl mx-auto bg-white shadow-lg
+       backdrop-blur-md lg:p-6 md:p-4 p-2'>
         <h1 className='text-3xl font-bold text-[#5e5c5c] mb-6 text-center'>CORE VALUES</h1>
         <ul className='list-disc px-6'>
           <li className='py-4 text-xl text-[#767474] font-semibold'>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { background } from '../../assets/image'
 import { ClientReview, Message , Team , ImageGallery} from '../../index'
 
 function About() {
+  useEffect(() => {
+    window.scroll(0 , 0)
+  } , [])
   return (
     <div>
     <div className='relative  h-[80vh] bg-cover overflow-hidden'    
